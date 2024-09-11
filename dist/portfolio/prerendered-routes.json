@@ -1,8 +1,12 @@
 {
   "routes": [
     "/en-US/",
+    "/en-US/education",
+    "/en-US/languages",
     "/en-US/projects",
     "/es/",
+    "/es/education",
+    "/es/languages",
     "/es/projects"
   ]
 }
