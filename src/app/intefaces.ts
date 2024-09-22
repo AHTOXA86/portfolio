@@ -1,4 +1,4 @@
-interface Project {
+export interface Project {
   company: string;
   customer: string;
   description: string;
