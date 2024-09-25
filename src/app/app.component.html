@@ -1,16 +1,10 @@
-<!-- <div class="image-container"> -->
-  <!-- </div> -->
-  <app-navmenu [title]="this.title" class="app-navmenu"></app-navmenu>
-  <!-- <img ngSrc="/assets/background.jpg" fill /> -->
+<div class="canvas-container">
+  <ngt-canvas [sceneGraph]="SceneGraph" />
+</div>
+<app-navmenu [title]="this.title" class="app-navmenu"></app-navmenu>
+
 <main class="main">
   <div class="content">
-    <!-- <mat-grid-list cols="2" rowHeight="fit">
-      <mat-grid-tile>1</mat-grid-tile> -->
-      <!-- <mat-grid-tile> -->
-        <router-outlet />
-      <!-- </mat-grid-tile> -->
-    <!-- </mat-grid-list> -->
-    
+    <router-outlet />
   </div>
 </main>
-

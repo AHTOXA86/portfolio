@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { extend } from 'angular-three';
+import * as THREE from 'three';
+
+extend(THREE);
 
 @Component({
-  selector: 'app-grass',
-  standalone: true,
-  imports: [],
-  templateUrl: './grass.component.html',
-  styleUrl: './grass.component.scss'
+    standalone: true,
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  templateUrl: './grass.component.html'
 })
 export class GrassComponent {
 
