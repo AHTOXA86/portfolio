@@ -339,15 +339,20 @@ export const data = {
             }
         }
     ],
-    "languages": {
-        "English": {
+
+    "languages": [
+        {
+            "languageId": "English",
             "level": "intermediate"
         },
-        "Russian": {
+        {
+            "languageId": "Russian",
             "level": "native"
         },
-        "Ukrainian": {
+        {
+            "languageId": "Ukrainian",
             "level": "native"
         }
-    }
+    ]
+
 }

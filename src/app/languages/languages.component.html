@@ -1,5 +1,9 @@
-<p>​​​​​English​—​intermediate​​​ 
-
-    ​​​​Russian​—​native​​​ 
-    
-    ​​​​Ukrainian​—​native​​​​ </p>
+@for (language of languages; track $index) {
+    <mat-card appearance="outlined">
+        <mat-card-header>{{language.languageId}}</mat-card-header>
+        <mat-card-content>
+            <span i18n>Level:</span>
+            {{language.level}}
+        </mat-card-content>
+      </mat-card>
+    }

@@ -3,6 +3,30 @@
     <mat-card-header>{{project.project}}</mat-card-header>
     <mat-card-content>
         {{project.description}}
+        <div><span i18n>Company:</span>{{project.company}}</div>
+        <div><span i18n>Customer:</span>{{project.customer}}</div>
+        <div><span i18n>Team size:</span>{{project.teamSize}}</div>
+        <div><span i18n>Role:</span>{{project.role}}</div>
+
+        <div><span i18n>Responsibilities:</span>
+
+            <mat-list role="list">
+                @for (item of project.responsibilities; track $index) {
+                <mat-list-item role="listitem">{{item}}</mat-list-item>
+                }
+              </mat-list>
+        
+        </div>
+        <div><span i18n>Tools and technologies:</span>
+
+            <mat-list role="list">
+                @for (item of project.toolsAndTechnologies; track $index) {
+                <mat-list-item role="listitem">{{item}}</mat-list-item>
+                }
+              </mat-list>
+        
+        </div>
+
     </mat-card-content>
   </mat-card>
 }

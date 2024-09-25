@@ -1,3 +1,15 @@
-<p>​​​MS in Computer Modelling of Processes and Systems 
-
-    ​National Technical University "Kharkiv Polytechnic Institute”, Institute of Education and Science in Engineering and Physics​​ </p>
+@for (item of education; track $index) {
+<mat-card appearance="outlined">
+    <mat-card-header>{{item.title}}</mat-card-header>
+    <mat-card-content>
+        <div>
+            <span i18n>Place:</span>
+            {{item.institute.name}}
+        </div>
+        <div>
+            <span i18n>Duration:</span>
+            {{item.duration.from}}-{{item.duration.to}}
+        </div>
+    </mat-card-content>
+</mat-card>
+}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
 import { Project } from '../intefaces'
 import { data } from '../data'
 
@@ -7,7 +8,7 @@ import { data } from '../data'
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [MatCardModule],
+  imports: [MatCardModule, MatListModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
