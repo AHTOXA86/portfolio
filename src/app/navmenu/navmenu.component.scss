@@ -5,4 +5,19 @@
 .mat-toolbar {
   background: transparent;
   justify-content: space-around;
+
+   span, a {
+    color: var(--sys-surface);
+    text-decoration: none;
+  }
+
+  span {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  mat-toolbar-row {
+  justify-content: space-around;
+
+  }
 }
