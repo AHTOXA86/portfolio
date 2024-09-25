@@ -1,4 +1,10 @@
-<ngt-mesh>
+<ngt-ambient-light [intensity]="0.7" />
+<ngt-spot-light [position]="10" [angle]="0.15" [penumbra]="1" />
+<ngt-point-light [position]="-10" />
+
+<ngt-mesh (beforeRender)="onBeforeRender($any($event))">
     <ngt-box-geometry />
-    <ngt-mesh-basic-material />
+    <ngt-mesh-standard-material [color]="'red'"/>
 </ngt-mesh>
+
+<ngt-orbit-controls *args="[camera, glDom]" [enableDamping]="true" />
